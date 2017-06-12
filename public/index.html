@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <!--
+    Notice the use of %PUBLIC_URL% in the tag above.
+    It will be replaced with the URL of the `public` folder during the build.
+    Only files inside the `public` folder can be referenced from the HTML.
+
+    Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+    work correctly both with client-side routing and a non-root public URL.
+    Learn how to configure a non-root public URL by running `npm run build`.
+  -->
+  <title>Company Snippet</title>
+</head>
+<body>
+
+<!-- HEADER -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/"><img src="/images/tempLanding/logo.png" alt="Company">
+      </a>
+    </div>
+    <div id="navbar1" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Products <span
+            class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/restaurant-menu">Changing module</a></li>
+            <li><a href="/snippets">Snippets</a></li>
+            <li><a href="/rest">REST API</a></li>
+          </ul>
+        </li>
+        <li><a href="FAQ">FAQ</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- MAIN PART OF THIS PAGE -->
+<main id="root"></main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="row footer-info_bar">
+      <div class="col-md-4 col-sm-6">
+        <p class="footer-content_title">Product</p>
+        <ul>
+          <li><a href="/rest">REST API</a></li>
+          <li><a href="/snippets">Snippets Store</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <p class="footer-content_title">Company</p>
+        <ul>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <p class="footer-content_title">Resources</p>
+        <ul>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Documentation</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row follow_bar">
+      <div class="col-sm-4  col-sm-offset-4">
+        <p class="footer-content_title">Follow us on social media</p>
+        <div class="row footer-icons">
+          <div class="col-sm-12">
+            <a href="#"><img class="footer-icons--social" src="./images/tempLanding/footerIcon-fb.png"></a>
+            <a href="#"><img class="footer-icons--social" src="./images/tempLanding/footerIcon-tw.png"></a>
+            <a href="#"><img class="footer-icons--social" src="./images/tempLanding/footerIcon-yt.png"></a>
+            <a href="#"><img class="footer-icons--social" src="./images/tempLanding/footerIcon-in.png"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row sign_in_bar">
+      <div class="col-sm-4 col-sm-offset-4">
+        <p class="footer-content_title">Try now! It's free!</p>
+        <div class="row">
+          <div class="col-sm-12">
+            <a class="btn btn-link btn-border--green" href="#">Log in</a>
+            <a class="btn btn-link btn-background--green" href="#">Sign up</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

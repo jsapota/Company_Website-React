@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="../../assets/css/bootstrap-grid.css"/>
+  <title>Contact Form</title>
+</head>
+<body>
+<!--
+Source:
+https://html5up.net/miniport<br>
+Author:
+Design: HTML5 UP-->
+<div class="company-grid company_contact-form-1">
+  <div class="wrapper style4">
+    <div id="contact" class="container">
+      <div class="row">
+        <div class="col-sm-12 contactTitle">
+          <h2>Big and magical title for Contact Form</h2>
+          <p>Smaller yet very interesting description</p>
+        </div>
+      </div>
+      <div>
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
+            <form sheetsu="https://sheetsu.com/apis/v1.0/cca08de8bfe1/sheets/contact_form-1-inbox">
+              <div>
+                <div class="row">
+                  <div class="col-md-6 col-sm-12">
+                    <input type="text" name="name" id="company-contact-from-name" placeholder="Name"/>
+                  </div>
+                  <div class="col-md-6 col-sm-12">
+                    <input type="text" name="email" id="company-contact-from-email" placeholder="Email"/>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 col-sm-12">
+                    <input type="text" name="subject" id="company-contact-from-subject" placeholder="Subject"/>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 col-sm-12">
+                    <textarea name="message" id="company-contact-from-message" placeholder="Message"></textarea>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 col-sm-12">
+                    <ul class="actions">
+                      <li><input type="submit" value="Send Message"/></li>
+                      <li><input type="reset" value="Clear Form" class="alt" onclick="clearFields()"/></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+    <script>
+      var clearFields = function () {
+        document.getElementById("company-contact-from-name").value = "";
+        document.getElementById("company-contact-from-email").value = "";
+        document.getElementById("company-contact-from-subject").value = "";
+        document.getElementById("company-contact-from-message").value = "";
+      };
+    </script>
+    <script src="//load.sheetsu.com?i=d0c5"></script>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+.snippet-mobile-preview
+  width: 100%
+  display: table
+
+  iframe
+    border-radius: 2px
+    border: none
+    box-shadow: none
+    overflow-y: scroll
+    min-height: 471px
+
+  &:focus
+    outline: 0
+
+  .mobile-preview
+    position: relative
+    left: 15%
+    background-image: url('../../../../public/images/snippetImages/iphoneCaly.png')
+    background-size: cover
+
+  .snippet-live
+    border: none
+    border-radius: 2px
+    position: absolute
+    background: white
+
+
+@media screen and (max-width: 440px)
+  .snippet-mobile-preview
+    padding-left: 0
+    width: 340px
+  iframe
+    width: 300px
+  .mobile-preview
+    height: 580px
+    width: 340px
+  .snippet-live
+    top: 83px
+    left: 28px
+    width: 286px
+    height: 472px
+
+
+@media (min-width: 440px)
+  .mobile-preview
+    height: 580px
+    width: 440px
+  .snippet-live
+    top: 108px
+    left: 38px
+    width: 367px
+    height: 472px
+  iframe
+    width: 367px
+
+@media (max-width: 570px)
+  .snippet-mobile-preview
+    display: none
+
+@media (min-width: 570px)
+  .snippet-mobile-preview
+    display: block

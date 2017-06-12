@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Test company</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../../assets/css/bootstrap-grid.css">
+
+</head>
+<body>
+<div class="row">
+  <div class="col-sm-12">
+    <div class="company-grid company-conference-event-schedule-1 container">
+      <div class="row">
+        <div class="header col-sm-12">
+          <p>Event Schedule</p>
+        </div>
+      </div>
+      <div class="row"
+           sheetsu="https://sheetsu.com/apis/v1.0/cca08de8bfe1/sheets/conference-event-schedule-1"
+           company-limit="4">
+        <div class="col-sm-4">
+          <div class="event">
+            <div class="eventInfo">
+              <div class="row">
+                <div class="col-sm-12"><p class="eventTime">{{time}}</p></div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12"><p class="eventSubject">{{subject}}</p></div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12"><p class="eventAuthor">{{speaker}}</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<script src="//load.sheetsu.com?i=d0c5"></script>
+</body>
+</html>

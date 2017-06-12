@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css?family=Lato")
+
+.recent_post-1
+  > *
+    -moz-box-sizing: border-box
+    -webkit-box-sizing: border-box
+    box-sizing: border-box
+    font-family: 'Lato', sans-serif
+    &:before, &:after
+      -moz-box-sizing: border-box
+      -webkit-box-sizing: border-box
+      box-sizing: border-box
+      font-family: 'Lato', sans-serif
+  width: 100%
+  position: relative
+  text-shadow: 1px 1px 0 #fff
+  background-image: url("../../assets/images/grad2.png"), url("../../assets/images/grad1.png")
+  background-repeat: no-repeat, repeat
+  background-size: 100% 15em, auto auto
+  background-position: top center, top left
+  padding: 4.5em 1em 4.5em 1em
+  .container
+    margin-left: auto
+    margin-right: auto
+    width: 960px
+    margin-bottom: 2em
+  .row
+    border-bottom: solid 1px transparent
+    -moz-box-sizing: border-box
+    -webkit-box-sizing: border-box
+    box-sizing: border-box
+    > *
+      float: left
+      -moz-box-sizing: border-box
+      -webkit-box-sizing: border-box
+      box-sizing: border-box
+    &:after, &:before
+      content: ''
+      display: block
+      clear: both
+      height: 0
+    > *
+      padding: 0 0 0 40px
+    margin: 0 0 -1px -40px
+  h2, h3
+    text-transform: uppercase
+    font-weight: 800
+    letter-spacing: 0.04em
+    color: #404248
+    margin: 0 0 1em 0
+  h2
+    font-size: 2em
+    margin: 0 0 1.5em 0
+    line-height: 1em
+    &.icon
+      line-height: 48px
+      &:before
+        position: relative
+        top: 0.05em
+        margin-right: 0.5em
+        opacity: 0.25
+  h3
+    font-size: 1.35em
+    margin-top: 2em
+  br.clear
+    clear: both
+  hr
+    border: 0
+    border-top: solid 1px #ddd
+  p
+    margin-bottom: 2em
+    word-wrap: break-word
+  .date
+    display: block
+    text-transform: uppercase
+    font-weight: 700
+    letter-spacing: 0.065em
+    font-size: 0.9em
+    color: #696969
+    margin: 0 0 0.25em 0
+  section, article
+    margin-bottom: 2em
+  .image
+    position: relative
+    display: inline-block
+    img
+      display: block
+      width: 100%
+      border-radius: 8px
+    &:before
+      content: ''
+      display: block
+      position: absolute
+      left: 0
+      top: 0
+      width: 100%
+      height: 100%
+      opacity: 0.75
+    &.featured
+      display: block
+      width: 100%
+      margin: 0 0 2.5em 0
+    &.left
+      float: left
+      margin: 0 2em 2em 0
+      width: 200px
+      height: 200px
+  .box.excerpt
+    position: relative
+    overflow: hidden
+    border-bottom: 1px solid lightgrey
+    header
+      margin: 0 0 1em 0
+    .image
+      text-decoration: none
+  .icon
+    text-decoration: none
+  .iconText
+    height: 25px
+    width: 25px
+    padding-right: 10px
+
+@media screen and (min-width: 737px) and (max-width: 1200px)
+  .recent_post-1
+    .container
+      width: 100%
+    .row
+      > *
+        padding: 35px 0 0 35px
+      margin: -35px 0 -1px -35px
+
+@media screen and (min-width: 737px)
+  .recent_post-1 .row
+    > *
+      padding: 50px 0 0 50px
+    margin: -50px 0 -1px -50px
+
+@media screen and (max-width: 736px)
+  .recent_post-1
+    .row
+      > *
+        padding: 10px 0 0 10px
+      margin: -10px 0 -1px -10px
+    .container
+      width: 100% !important
+    h2, h3
+      font-size: 13pt !important
+    p
+      margin-bottom: 1em
+      font-size: 13pt !important
+    h2
+      line-height: 1.5em
+    section, article
+      clear: both
+      margin-bottom: 4em !important
+    .image.left
+      width: 25%
+      height: 100%
+      margin-bottom: 2em !important
+    .box.excerpt
+      .image-left
+        margin-right: 0
+      header
+        margin-left: 32%
+      p
+        clear: both

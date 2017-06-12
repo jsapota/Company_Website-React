@@ -1,0 +1,52 @@
+@import '../../../variables'
+.DevelopersBar
+  min-height: 650px
+  color: white
+  background: $color__developers_bar--background
+  text-align: left
+  padding-top: 120px
+  padding-bottom: 120px
+  .tab-button
+    font-size: 25px
+    display: inline
+    padding: 20px
+    font-weight: 200
+    cursor: pointer
+  .active-button
+    font-weight: 800
+  .active-table
+    width: 100%
+
+  .hidden-table
+    display: none
+  pre
+    padding: 0
+    border: none
+    border-radius: 0
+    font-size: 15px
+
+  .secondTab
+    margin-top: 50px
+  .developersHeader
+    text-align: center
+    font-size: 40px
+    font-weight: 400
+    .subtitle
+      padding-top: 3vh
+      padding-bottom: 2vh
+      font-size: 16px
+      font-weight: 300
+  .title
+    font-size: 25px
+    padding: 0
+    margin: 0
+  .desc
+    font-size: 18px
+  code
+    min-height: 100%
+  &:hover,
+  &:focus,
+  &:visited,
+  &active
+    color: white
+    text-underline: none

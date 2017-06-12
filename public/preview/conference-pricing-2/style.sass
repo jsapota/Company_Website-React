@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400')
+
+.company-conference-pricing-2
+  position: relative
+  width: 100%
+  overflow: hidden
+  text-align: center
+  min-height: 520px
+  .menuElement
+    height: 650px
+    font-family: 'Lato', sans-serif
+    margin: 1% -2px 2% -2px
+    display: inline-block
+    position: relative
+    width: 22%
+    vertical-align: bottom
+    min-height: 600px
+    min-width: 280px
+    -webkit-transform: perspective(1px) translateZ(1)
+    transform: perspective(1px) translateZ(1)
+    -webkit-transition-duration: 0.3s
+    transition-duration: 0.3s
+    -webkit-transition-property: transform
+    transition-property: transform
+    z-index: 0
+    &:hover, &:focus, &:active
+      -webkit-transform: scale(1.05)
+      transform: scale(1.05)
+      z-index: 10
+      margin-left: 0.3%
+      margin-right: 0.3%
+      box-shadow: -60px 40px 100px -90px #000000, 60px 40px 100px -90px #000000
+    .elementTitle
+      background: black
+      color: white
+      padding: 4px 0 4px 20px
+      margin-bottom: -2px
+    .elementCost
+      position: absolute
+      bottom: 30px
+      width: 90%
+      text-align: center
+      color: black
+      padding: 5px 0
+      border-top: 1px solid black
+    .costFontFirstRow
+      font-size: 2.5em
+      padding-bottom: 0
+    .costFontSecondRow
+      font-size: 1.5em
+      padding-top: 0
+      margin-top: 0
+      padding-bottom: 15px
+    .elementFeatures
+      height: 100%
+      text-align: left
+      padding-bottom: 20px
+      p
+        padding-left: 20px
+        width: 80%
+        font-size: 1.1em
+    .feature
+      margin-left: 10%
+      margin-bottom: 10px
+    .elementButtons
+      position: absolute
+      text-align: center
+      bottom: 0
+      width: 100%
+    .elementButton
+      width: 60%
+      padding: 13px 0
+      background: #00A948
+      border: none
+      color: white
+      font-size: 1.2em
+      &:focus
+        outline: none !important
+        border-color: inherit
+        -webkit-box-shadow: none
+        box-shadow: none
+
+@media (min-width: 1200px)
+  .company-conference-pricing-2
+    .menuElement
+      width: 23%
+
+@media (max-width: 1200px)
+  .company-conference-pricing-2
+    .menuElement
+      width: 30%

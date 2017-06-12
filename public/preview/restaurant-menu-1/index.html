@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../../assets/css/bootstrap-grid.css"/>
+  <link rel="stylesheet" type="text/css" href="./styles.css"/>
+</head>
+<body>
+  <div class="company-restaurant-menu-1 company_snippet"
+       sheetsu="https://sheetsu.com/apis/v1.0/cca08de8bfe1/sheets/restaurant-menu-1">
+    <div class="menu">
+      <div class="row">
+        <div class="el-left col-sm-4 col-md-6 ">
+          <img class="image" src={{image}}>
+        </div>
+        <div class="el-right col-sm-8 col-md-6 ">
+          <div class="row">
+            <p class="title">{{name}}</p>
+          </div>
+          <div class="row">
+            <div class="description">
+              <p>{{ingredients}}</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="price">
+              <p><b>{{price}}</b></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="//load.sheetsu.com?i=d0c5"></script>
+
+</body>
+</html>

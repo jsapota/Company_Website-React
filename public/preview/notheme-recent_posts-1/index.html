@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Recent Posts</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="../../assets/css/bootstrap-grid.css"/>
+</head>
+<body>
+
+
+<div class="company-grid recent_post-1">
+  <!--
+https://html5up.net/zerofour
+    ZeroFour by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)-->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-12 col-sm-12">
+        <section class="box article-list">
+          <h2><img class="iconText" src="../../assets/images/texticon.png">Recent Posts</h2>
+          <div class="company_snippet" sheetsu="https://sheetsu.com/apis/v1.0/cca08de8bfe1/sheets/recent_posts-1"
+               company-offset="1">
+            <article class="box excerpt">
+              <div>
+                <a href="#" class="image left"><img src="{{postImage}}" alt=""></a>
+                <span class="date">{{postData}}</span>
+                <h3>{{postTitle}}</h3>
+                <p>{{postContent}}</p>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+      <div class="col-lg-4 col-md-12 col-sm-12">
+        <section class="box spotlight">
+          <h2><img class="iconText" src="../../assets/images/texticon.png">Spotlight</h2>
+          <div class="company_snippet" sheetsu="https://sheetsu.com/apis/v1.0/cca08de8bfe1/sheets/recent_posts-1"
+               company-limit="1">
+            <article>
+              <a href="#" class="image featured"><img src="{{postImage}}" alt=""></a>
+              <div>
+                <header>
+                  <h3>{{postTitle}}</h3>
+                  <p>{{postSubtitle}}</p>
+                </header>
+                <p>{{postContent}}</p>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+  <script src="//load.sheetsu.com?i=d0c5"></script>
+</div>
+
+
+</body>
+</html>

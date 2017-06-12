@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower')
+
+.snippet-customizer
+  position: relative
+  padding-top: 2em
+  .tableCont
+    width: 100%
+    overflow-y: scroll
+  .widget-table
+    min-width: 750px
+    overflow-x: scroll
+    height: 100%
+    margin-bottom: 2em
+
+  .widget-table table
+    font-family: arial, sans-serif
+    font-weight: normal
+    font-size: 13px
+    color: #000
+    background-color: #fff
+    width: 100%
+    border: 1px solid #dadada
+
+  .widget-table table thead
+    background-color: #f3f3f3
+    font-weight: normal
+
+  .widget-table table th
+    border: 1px solid #dadada
+    padding: 4px 3px
+    text-align: center
+
+  .widget-table table td
+    border: 1px solid #dadada
+    padding: 3px
+
+  .widget-table table td input
+    float: left
+    width: 100%
+
+  .widget-table table .num
+    background-color: #f3f3f3
+    text-align: center
+
+  .widget-table table .dont-copy
+    -webkit-user-select: none
+    -khtml-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    -o-user-select: none
+    user-select: none
+
+  .widget-table table [data-pseudo-content]::before,
+  .widget-table table [data-pseudo-content--before]::before,
+  .widget-table table [data-pseudo-content--after]::after
+    content: attr(data-pseudo-content)
+
+
+  .widget-table input
+    border: none
+    outline: none
+
+
+  .try-it
+    color: red
+    float: left
+    font-family: 'Indie Flower', cursive
+
+  .try-arrow
+    position: absolute
+    top: 45px
+    left: 7%
+    pointer-events: none
+
+
+@media (max-width: 440px)
+  .try-it
+    text-align: center
+    font-size: 0.7em
+@media (min-width: 400px)
+  .try-it
+    padding-left: 14%
+    font-size: 1.2em
+
+@media (max-width: 800px)
+  .try-arrow
+    display: none
+
+@media (min-width: 440px) and (max-width: 1000px)
+  .try-it
+    padding-left: 20%
+    font-size: 1.2em
+

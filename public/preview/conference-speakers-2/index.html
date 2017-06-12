@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Test company</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../../assets/css/bootstrap-grid.css">
+
+</head>
+<body>
+<!--
+Source: https://demo.themefuse.com/?theme=keynote
+-->
+<div class="row">
+  <div class="col-sm-12">
+    <div class="company-grid company-conference-speakers-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <h1 class="speakersHeader">
+              Meet the speakers
+            </h1>
+          </div>
+        </div>
+        <div class="row"
+             sheetsu="https://sheetsu.com/apis/v1.0/cca08de8bfe1/sheets/conference-speakers-2"
+             company-limit="4">
+          <div class="col-sm-4">
+            <div class="speaker">
+              <div class="speakerInfo">
+                <div class="row">
+                  <div class="col-sm-12"><img class="speakerImage " src={{image}}></div>
+                </div>
+                <div class="row">
+
+                  <div class="col-sm-12 saturated"><p class="speakerName ">{{name}}</p></div>
+                </div>
+                <div class="row">
+
+                  <div class="col-sm-12"><p class="speakerPosition">{{position}}</p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<script src="//load.sheetsu.com?i=d0c5"></script>
+</body>
+</html>

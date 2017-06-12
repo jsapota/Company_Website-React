@@ -1,0 +1,42 @@
+.partners
+  display: block
+  height: 100%
+  padding-top: 100px
+  padding-bottom: 80px
+  @media screen and (min-width: 1200px)
+    margin-bottom: 50px
+  img
+    object-fit: cover
+    width: 100%
+    filter: grayscale(100%)
+    opacity: 0.8
+    @media screen and (max-width: 770px)
+      img
+        width: 80%
+        height: auto
+  .padding--conditional
+    @media screen and (min-width: 768px)
+      padding-top: 50px
+    @media screen and (min-width: 990px)
+      padding-top: 0
+  .imageRow
+    width: 90%
+    margin-left: 5%
+  .mediaworks
+    padding-top: 15px
+  .padding--additional
+    padding-top: 20px
+    @media screen and (max-width: 990px)
+      padding-top: 70px
+  .imageBox
+    @media screen and (max-width: 770px)
+      height: 100px
+    @media screen and (max-width: 990px)
+      height: 180px
+    @media screen and (max-width: 1200px)
+      height: 180px
+
+
+.partners::after
+  clear: both
+

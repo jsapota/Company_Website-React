@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>pricing</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="../../assets/css/bootstrap-grid.css">
+</head>
+<body>
+<div class="row">
+  <div class="company-grid company-conference-pricing-1"
+       sheetsu="https://sheetsu.com/apis/v1.0/cca08de8bfe1/sheets/conference-pricing-1"
+       company-limit="4">
+    <div class="menuElement">
+      <div class="elementTitle">
+        <h1>{{title}}</h1>
+      </div>
+      <div class="elementCost">
+        <p>
+          <b class="costFont">${{cost}}</b>
+          <sub>/month</sub>
+        </p>
+      </div>
+      <div class="elementFeatures">
+        <p class="feature">{{feature1}}</p>
+        <p class="feature">{{feature2}}</p>
+        <p class="feature">{{feature3}}</p>
+        <p class="feature">{{feature4}}</p>
+        <p class="feature">{{feature5}}</p>
+        <p class="feature">{{feature6}}</p>
+        <p class="feature">{{feature7}}</p>
+        <p class="feature">{{feature8}}</p>
+      </div>
+      <div class="elementButtons">
+        <a href="{{featurePage}}"><button class="elementButton"> Check out!</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="//load.sheetsu.com?i=d0c5"></script>
+</body>
+</html>

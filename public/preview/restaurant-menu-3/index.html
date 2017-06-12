@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <!--This is the body of your snippet - Each row will be like this-->
+    <div class="company-grid company-menu-1" sheetsu="https://sheetsu.com/apis/v1.0/bad49d79cbc0/sheets/Arkusz5">
+        <div class="menuElement">
+            <div class="row">
+                <!--Left side of your menu elements-->
+                <div class="leftHalf">
+                    <div class="firstRow">
+                        <h3>{{name}}</h3>
+                    </div>
+                    <div class="secondRow">
+                        <p class="ingredients">{{ingredients}}</p>
+                    </div>
+                </div>
+                <!-- Right side of your menu elements-->
+                <div class="rightHalf">
+                    <div class="secondRow">
+                        <div class="prices">
+                            <!--Adjust the the number of prices for your needs-->
+                            <!--Remember to make the same changes to your sheet-->
+                            <div class="price">
+                                <p class="sizeLabel">Small:</p>
+                                <p class="priceValue">{{small}}</p>
+                            </div>
+                            <div class="price">
+                                <p class="sizeLabel">Medium:</p>
+                                <p class="priceValue">{{medium}}</p>
+                            </div>
+                            <div class="price">
+                                <p class="sizeLabel">Large:</p>
+                                <p class="priceValue">{{large}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="//load.sheetsu.com?i=d0c5"></script>
+</body>
+</html>

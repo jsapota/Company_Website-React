@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400')
+
+.company-conference-speakers-3
+  font-family: 'Lato', sans-serif
+  .speaker
+    position: absolute
+    text-align: center
+    margin: 10px
+    font-size: 18px
+    .speakerImage
+      width: 94%
+      margin: 3%
+      height: 300px
+      object-fit: cover
+    .speakerName,
+    .speakerPosition
+      padding: 0
+      margin: 5px 0
+      text-transform: uppercase
+    .speakerPosition
+      margin-bottom: 30px
+    .mediabar
+      position: relative
+      top: -150px
+      margin-left: 3%
+      width: 94%
+      padding-top: 10px
+      background: white
+      height: 50px
+      opacity: 0
+      -webkit-transition: all 0.3s ease-out
+      -moz-transition: all 0.3s ease-out
+      -o-transition: all 0.3s ease-out
+      transition: all 0.3s ease-out
+      -webkit-transform: translateY(30px)
+      -moz-transform: translateY(30px)
+      -ms-transform: translateY(30px)
+      -o-transform: translateY(30px)
+      transform: translateY(30px)
+  .speaker:hover
+      background: #2A3132
+      color: white
+      font-weight: 600
+      .mediabar
+        opacity: 0.8
+        -webkit-transition: all 0.3s ease-in
+        -moz-transition: all 0.3s ease-in
+        -o-transition: all 0.3s ease-in
+        transition: all 0.3s ease-in
+        -webkit-transform: translateY(0)
+        -moz-transform: translateY(0)
+        -ms-transform: translateY(0)
+        -o-transform: translateY(0)
+        transform: translateY(0)
