@@ -25,5 +25,6 @@ P
 
 .idea/
 
+!/assets/css/*
 !/public/assets/css/*
 !/src/styles/monokai.css
